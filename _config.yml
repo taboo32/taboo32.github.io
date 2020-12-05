@@ -41,7 +41,7 @@ nav:
   Home:
     - "/"
   Blog:
-    - "/blog/"
+    - "/"
     #  - { Categories All: "/blog/categories/" }
     - { TIL (Today I Learned): "blog/categories/#til" }
     - { AWS: "blog/categories/#aws" }
