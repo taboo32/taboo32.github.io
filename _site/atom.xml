@@ -4,7 +4,7 @@
  <title>Byeong ki Cho</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-12-05T19:30:33+09:00</updated>
+ <updated>2020-12-05T19:33:21+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Byeong ki Cho</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>javascript 주요 메소드 목록 (업데이트 중)</title>
-   <link href="http://localhost:4000/javascript/2020/12/05/ts-001/"/>
+   <title>typescript - udemy -001</title>
+   <link href="http://localhost:4000/typescript/2020/12/05/ts-001/"/>
    <updated>2020-12-05T00:00:00+09:00</updated>
-   <id>http://localhost:4000/javascript/2020/12/05/ts-001</id>
+   <id>http://localhost:4000/typescript/2020/12/05/ts-001</id>
    <content type="html">&lt;!----------------- 탬플릿
 ## forEach
 ### 설명
