@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      firebase 설치 및 설정 &middot; 공부블로그
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"> </script>
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+  </script>
+  
+</head>
+
+
+  <body>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-personal-info">
+      <div
+        class="
+      "
+      >
+        <a href="https://www.github.com/taboo32">
+          <img src="/public/profile.png" alt="profile picture" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>taboo32 (Byeongki Cho)</p>
+      </div>
+       
+      
+      <div class="sidebar-personal-info-section">
+        <p>
+          Contact Me   
+          <a href="https://github.com/taboo32">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+           |   
+          <a href="mailto:byeongkicho@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+            
+          <br />
+          <span class="notice">
+            잘못된 내용이 있다면 편하게 댓글 남겨주세요!
+          </span>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- 사이드 메뉴시작 -->
+  <nav class="sidebar-nav">
+        
+    <!-- 사이드바 대분류 -->
+    <span class="">
+      <a
+        class="sidebar-nav-item "
+        href="/blog/"
+      >
+        Home
+      </a>
+
+      
+    </span>
+
+        
+    <!-- 사이드바 대분류 -->
+    <span class="foldable">
+      <a
+        class="sidebar-nav-item "
+        href="/"
+      >
+        Categories
+      </a>
+
+          
+      <!-- 사이드바 카테고리 소분류  -->
+
+      <a
+        class="sidebar-nav-item sidebar-nav-item-sub "
+        href="/blog/categories/#til"
+      >
+         TIL (Today I Learned) - 
+         0
+      </a>
+           
+      <!-- 사이드바 카테고리 소분류  -->
+
+      <a
+        class="sidebar-nav-item sidebar-nav-item-sub "
+        href="/blog/categories/#javascript"
+      >
+         javascript - 
+         1
+      </a>
+           
+      <!-- 사이드바 카테고리 소분류  -->
+
+      <a
+        class="sidebar-nav-item sidebar-nav-item-sub "
+        href="/blog/categories/#aws"
+      >
+         aws - 
+         0
+      </a>
+           
+      <!-- 사이드바 카테고리 소분류  -->
+
+      <a
+        class="sidebar-nav-item sidebar-nav-item-sub "
+        href="/blog/categories/#etc"
+      >
+         etc - 
+         1
+      </a>
+       
+    </span>
+
+        
+    <!-- 사이드바 대분류 -->
+    <span class="">
+      <a
+        class="sidebar-nav-item "
+        href="/about/"
+      >
+        About
+      </a>
+
+      
+    </span>
+
+        
+    <!-- 사이드바 대분류 -->
+    <span class="">
+      <a
+        class="sidebar-nav-item "
+        href="/search/"
+      >
+        Search
+      </a>
+
+      
+    </span>
+
+    
+  </nav>
+  <div class="sidebar-item template">
+    <p>
+      Powered by <a href="http://jekyllrb.com">jekyll</a> and
+      <a href="http://codinfox.github.io">codinfox-lanyon</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead nav-down">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Byeong ki Cho">
+              <!-- <img class="masthead-logo" src="/public/logo.png"/> -->
+              <img class="masthead-logo" src="/assets/images/blog-logo.png" />
+
+              <small id="blog-title">공부블로그</small>
+            </a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content"><div class="post">
+  <h1 class="post-title">firebase 설치 및 설정</h1>
+  <span class="post-date">16 Feb 2017</span>
+  <a href="#disqus_thread"></a>
+   | 
+  <a
+    href="/blog/tags/#개발"
+    class="post-tag"
+    >개발</a
+  >
+  
+  <a
+    href="/blog/tags/#firebase"
+    class="post-tag"
+    >firebase</a
+  >
+  
+  <a
+    href="/blog/tags/#파이어베이스"
+    class="post-tag"
+    >파이어베이스</a
+  >
+   
+  <article><h1 id="firebase">firebase</h1>
+<blockquote>
+  <p>강의URL : <a href="https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%96%B4%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%95%EC%A2%8C-%EC%9B%B9-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/">firebase를 이용한 간단한 웹  어플리케이션 만들기</a></p>
+</blockquote>
+
+<h2 id="파이어베이스란">파이어베이스란</h2>
+<blockquote>
+  <p>파이어베이스는 웹과 모바일(Android, IOS) 개발에 필요한 기능을 제공하는 <strong>BaaS(BackEnd as a Service)  즉, 백엔드 서비스</strong> 입니다.</p>
+</blockquote>
+
+<blockquote>
+  <p>기존의 경우 백엔드서비스를 구현하기위하여 <strong>서버구성, 서버아키텍쳐, 인증,DB설계 및 구현등</strong> 모든 기능을 개발해야 하는 수고로움이 있었으나 파이어베이스의 출시로 앞선 수고로움을 대신 해서 시간을 단축 시키고 프론트 엔드개발에 더욱 집중 할 수 있습니다.</p>
+</blockquote>
+
+<h2 id="firebase-개발환경설정">firebase 개발환경설정</h2>
+
+<h3 id="firebase-프로젝트-생성">firebase 프로젝트 생성</h3>
+<ol>
+  <li><a href="https://console.firebase.google.com/">firebase 콘솔 사이트 이동</a></li>
+  <li>새 프로젝트 만들기</li>
+  <li>Authentication (인증) 메뉴 이동</li>
+  <li>로그인방법 중 google 사용설정 on</li>
+</ol>
+
+<h3 id="로컬-개발환경-설정">로컬 개발환경 설정</h3>
+<blockquote>
+  <p>Firebase를 이용한 웹어플리케이션 구현을 위한 개발환경 설정 방법</p>
+</blockquote>
+
+<ol>
+  <li>nodejs 설치 (firebase 설치를 위한 nodejs 설치)</li>
+  <li>Firebase CLI 설치 (CLI : Command Line Interface)
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ npm install firebase-tools -g --save</code></li>
+      <li><code class="language-plaintext highlighter-rouge">-g</code> : 모든 터미널에서 firebase 입력시 바로 작동 가능 옵션</li>
+    </ul>
+  </li>
+  <li>Firebase Login (컴퓨터와 firebase를 연결하고 프로젝트에 대한 접근을 혀용)
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ firebase Login</code></li>
+      <li>firebase CLI에 로그인 로컬 컴퓨터와 firebase를 연결하고 프로젝트에 대한 접근을 허용</li>
+      <li><code class="language-plaintext highlighter-rouge">firebase list</code></li>
+      <li>프로젝트 리스트 확인</li>
+    </ul>
+  </li>
+  <li>Project Directory 초기화 (firebase init)
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ mkdir 프로젝트폴더</code></li>
+      <li>프로젝트 폴더 생성 후 이동</li>
+      <li><code class="language-plaintext highlighter-rouge">$ firebase init</code></li>
+      <li>프로젝트 선택, 기본 db 이름, public directory 사용 (웹앱)</li>
+      <li><code class="language-plaintext highlighter-rouge">firebase.json </code>: 파이어베이스 환경설정 파일 (호스팅시 기본폴더, path설정, DB 기본 룰셋파일)</li>
+      <li><code class="language-plaintext highlighter-rouge">database.rule.json</code> : 파이어베이스 기본 데이터베이스 정책</li>
+    </ul>
+  </li>
+  <li>Firebase serve
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ pwd</code> 명령으로 프로젝트 폴더인지 확인 (print working directory)</li>
+      <li><code class="language-plaintext highlighter-rouge">$ firebase serve</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="참고-사이트">참고 사이트</h3>
+<ul>
+  <li><a href="https://firebase.google.com/docs/hosting/">firebase 가이드 문서</a></li>
+</ul>
+</article>
+</div>
+
+
+<div id="disqus_thread"></div>
+<script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+  (function () {
+    // DON'T EDIT BELOW THIS LINE
+    var d = document,
+      s = d.createElement("script");
+    s.src = "//taboo32-github-io.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <h3>
+        <a href="/etc/2017/02/20/google-search-sitemap-jekyll/">
+          지킬 블로그 구글 검색 가능하게 하는 방법
+          <small>20 Feb 2017</small>
+        </a>
+      </h3>
+    </li>
+    
+    <li>
+      <h3>
+        <a href="/javascript/2017/02/17/js-method/">
+          javascript 주요 메소드 목록 (업데이트 중)
+          <small>17 Feb 2017</small>
+        </a>
+      </h3>
+    </li>
+    
+  </ul>
+</div>
+</div>
+    </div>
+    <a href="/search/" class="search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <!-- <img src="/assets/images/search.png"/> -->
+    </a>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function (document) {
+        var toggle = document.querySelector(".sidebar-toggle");
+        var sidebar = document.querySelector("#sidebar");
+        var checkbox = document.querySelector("#sidebar-checkbox");
+
+        document.addEventListener(
+          "click",
+          function (e) {
+            var target = e.target;
+
+            if (target === toggle) {
+              checkbox.checked = !checkbox.checked;
+              e.preventDefault();
+            } else if (checkbox.checked && !sidebar.contains(target)) {
+              /* click outside the sidebar when sidebar is open */
+              checkbox.checked = false;
+            }
+          },
+          false
+        );
+      })(document);
+    </script>
+    
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-92094009-1", "auto");
+      ga("send", "pageview");
+    </script>
+    
+    <script
+      id="dsq-count-scr"
+      src="//taboo32-github-io.disqus.com/count.js"
+      async
+    ></script>
+  </body>
+  
+  <script
+    id="dsq-count-scr"
+    src="//taboo32-github-io.disqus.com/count.js"
+    async
+  ></script>
+  
+
+  <script type="text/javascript">
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $(".masthead").outerHeight();
+
+    $(window).scroll(function (event) {
+      didScroll = true;
+    });
+
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    function hasScrolled() {
+      var st = $(this).scrollTop();
+
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta) return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $(".masthead").removeClass("nav-down").addClass("nav-up");
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $(".masthead").removeClass("nav-up").addClass("nav-down");
+        }
+      }
+
+      lastScrollTop = st;
+    }
+  </script>
+</html>

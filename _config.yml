@@ -1,10 +1,10 @@
 # Site Info
-title: taboo32's blog
-tagline: "taboo32's blog"
-description: "공부한 내용을 기록하는 곳입니다."
+title: 'Byeong ki Cho'
+tagline: '공부블로그'
+description: '공부하면서 배운점들을 정리하는 곳입니다'
 baseurl: ""
 url: https://taboo32.github.io
-logo: "/public/logo.png"
+logo: '/public/logo.png'
 
 # Site configurations
 gems:
@@ -17,7 +17,7 @@ sass:
   style: compressed
   sass_dir: _scss
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: '/blog/page:num'
 permalink: pretty
 
 version: 1.0.0
@@ -25,44 +25,43 @@ version: 1.0.0
 # About/contact
 author:
   name: Byeong ki Cho
-  description: taboo32(Byeong ki Cho)
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  description: taboo32 (Byeongki Cho)
   contact:
-    # linkedin: https://www.linkedin.com/in/lizhihao
-    github: https://github.com/taboo32
-    # facebook:  <hide>
-    # twitter: https://twitter.com/Li_Zhihao
-    # weibo: http://weibo.com/41173780
-    email: malito:byeongkicho@gmail.com
-    # 이메일 malito 확인할 것 .
+    # linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/taboo32
+    # facebook:  https://www.facebook.com/wayhome25
+    # twitter:   https://twitter.com/Li_Zhihao
+    # weibo:     http://weibo.com/41173780
+    email:    mailto:byeongkicho@gmail.com
 
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - "/"
-  Blog:
-    - "/"
-    #  - { Categories All: "/blog/categories/" }
-    - { TIL (Today I Learned): "blog/categories/#til" }
-    - { AWS: "blog/categories/#aws" }
-    - { ETC: "blog/categories/#etc" }
-    - { Tags: "/blog/tags/" }
+    - '/blog/'
+  Categories:
+    - '/'
+    # - { Categories All: '/blog/categories/' }
+    - { TIL (Today I Learned): '/blog/categories/#til' }
+    - { javascript: '/blog/categories/#javascript' }
+    - { aws: '/blog/categories/#aws' }
+    - { etc: '/blog/categories/#etc' }
+    # - { Tags: '/blog/tags/' }
   About:
-    - "/about/"
+    - '/about/'
+  Search:
+    - '/search/'
 
 # Where are tags and categories displayed
-tag_page: "/blog/tags/"
-category_page: "/blog/categories/"
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
 
-main:
-  image: /public/img/Lotus.jpeg
-  caption: "항상 배웁니다."
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: "G-6E9EF9W3NG" # leave blank if you don't want google analytics
-disqus_short_name: "taboo32" # leave blank if you don't want disqus
+google_analytics_token: 'UA-92094009-1' # leave blank if you don't want google analytics
+disqus_short_name: 'taboo32-github-io' # leave blank if you don't want disqus
 
-# Use the following pug-ins
-gem:
+
+# Use the following plug-ins
+gems:
   - jekyll-paginate

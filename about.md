@@ -3,28 +3,46 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+# Byeongki Cho | 클라우드 엔지니어
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+클라우드 엔지니어 조병기입니다
 
-There are currently two themes built on Poole:
+### Contact
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Email : byeongkicho@gmail.com
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Phone : 82) 10-2666-3052
 
-## Setup
+### Channel
 
-Some fun facts about the setup of this project include:
+Blog : [taboo32.github.io](https://taboo32.github.io)
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+Github : [https://github.com/taboo32](https://github.com/taboo32)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Linkedin : [https://www.linkedin.com/in/byeongki-cho-aa6b4618b/](https://www.linkedin.com/in/byeongki-cho-aa6b4618b/)
 
-Thanks for reading!
+---
+
+# Introduce
+
+열심히 하겠습니다.
+
+# Experience
+
+클라우드 개발자 교육 수료 - 20.05.30 ~ 20.10.30
+
+호주 워킹홀리데이 2013.10.16 ~ 2014.08,10
+
+# Skill
+
+**Language**
+
+- Toefl - 76점 - (2019.02.02 취득)
+- Toeic - 850점 - (2019.08.11 취득)
+- Toeic Speaking -150 (6) (2019.08.11 취득)
+
+# Certificate
+
+- Naver Cloud Platform Assocaite - (20.07.22 취득)
+- AWS Solution Architect Associate - (20.08.14 취득)
+- AWS Developer Associate - (20.09.01 취득)
