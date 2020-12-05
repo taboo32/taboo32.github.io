@@ -1,0 +1,93 @@
+I"�<!----------------- 탬플릿
+## forEach
+### 설명
+[MDN]()
+### 문법
+```javascript
+
+```
+### 예시
+```javascript
+
+```
+------------------->
+
+<h1 id="understanding-typescript-2020">Understanding TypeScript 2020</h1>
+
+<h3 id="what-is-typescript">What is TypeScript?</h3>
+
+<ul>
+  <li>Typescript is a Javascript Superset.</li>
+  <li>It makes writing javascript code easier and more powerful</li>
+  <li>But Brower can’t execute Typescript</li>
+  <li>also gives you extra error checking</li>
+  <li>in colon and specifying the type</li>
+  <li><code class="language-plaintext highlighter-rouge">tsc</code> ⇒ invoke typescript compiler</li>
+</ul>
+
+<h3 id="자바-스크립트의-문제점">자바 스크립트의 문제점</h3>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nx">num1</span> <span class="o">+</span> <span class="nx">num2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add</span><span class="p">(</span><span class="nx">input1</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span> <span class="nx">input2</span><span class="p">.</span><span class="nx">value</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="err">##</span><span class="nx">출력값</span> <span class="o">=&gt;</span>  <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">=</span> <span class="mi">105</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>어떤 input 이든 무조건 string으로 들어간다. 타입을 정할 수가 없다.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">tsc</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">ts</span>
+</code></pre></div></div>
+
+<p>는 타입 스크립트 컴파일러를 작동시킨다.</p>
+
+<ul>
+  <li>index.html 에서 <code class="language-plaintext highlighter-rouge">script src="sample-ts.js"</code> 항상 컴파일된 자바스크립트 파일을 읽어야한다. typescript는 읽지 못하기 때문에.</li>
+</ul>
+
+<h3 id="it-forces-us-to-write-better-cleaner-and-less-error-prone-code">It forces us to write better cleaner and less error prone code.</h3>
+
+<ul>
+  <li>error - prone (~ 하기 쉬운)</li>
+</ul>
+
+<p>What is Generic Programming?</p>
+
+<ul>
+  <li>Generic = 포괄적인, 총칭의 이라는 뜻이란다..후,,,</li>
+  <li>Generic은 어떠한 클래스 혹은 함수에서 사용할 타입을 그 함수나 클래스를 사용할 때 결정하는 프로그래밍 기법을 말한다.</li>
+  <li>JavaScript는 원래 타입 선언을 하지 않기 때문에 타입 에러가 발생하고, 코드 실행시키기 전까지 함수와 클래스가 모든 타입에 대응된다.</li>
+  <li>따라서 Generic을 통해서 단순히 하나의 타입에서만 작동하는 것이 아닌 여러 타입에서 작동하는 컴포넌트를 통해서 재사용할 수 있도록 해준다.</li>
+  <li>뒤에서 다시 공부해야겠다…머리에 잘 안들어오네</li>
+</ul>
+
+<p>what is Decorators?</p>
+
+<ul>
+  <li>TypeScript 및 ES6에 클래스가 도입되면서 클래스 및 클래스 멤버에 Annotation을 달거나 수정하기 위해 추가 기능이 필요할때, 클래스 선언과 멤버에 Annotation과 meta-programming 구문을 추가할 수 있는 방법을 제공한다…</li>
+  <li>클래스 선언, 메소드, 접근자, 프로퍼티, 매게 변수에 첨부할 수 있는 특수한 종류의 선언이며 <code class="language-plaintext highlighter-rouge">@expression</code> 형식을 사용한다.</li>
+</ul>
+
+<p>deviate?</p>
+
+<ul>
+  <li>일탈하다</li>
+</ul>
+
+<h3 id="typescript-adds">TypeScript adds</h3>
+
+<ul>
+  <li>Types</li>
+  <li>Next-gen JavaScript Features( Compiled down for older Browsers)</li>
+  <li>Non-JavaScript Features like Interfaces or Generics</li>
+  <li>Meta-Programming Features like Decorators.</li>
+  <li>Rich Configuration Options.</li>
+  <li>
+    <h2 id="modern-tooling-that-helps-even-in-non-typescript-projects">Modern Tooling that helps even in non-TypeScript Projects</h2>
+  </li>
+</ul>
+:ET
